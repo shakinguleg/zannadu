@@ -1,0 +1,105 @@
+$width:1020px;
+// header
+.header_wrap{
+    width: 100%;
+    background-image: url("../img/header.jpg");
+    background-size: cover;
+    padding: 25px 0;
+}
+
+.header{
+    width: $width;
+    height: 70px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.header .logo{
+    float: left;
+    margin-left: 10px;;
+    img{
+        height: 70px;
+    }
+}
+
+.header .search{
+    margin-right: 10px;;
+    float: right;
+    margin-top: 30px;
+    overflow: hidden;
+    
+    input{
+        float: left;
+        margin-right: 10px;
+        background-color: rgba(255, 255, 255, 0.45);
+        border: 1px solid transparent;
+        outline: none;
+        width: 260px;
+        padding: 8px 10px;
+        font-size: 0.9em;
+        box-shadow: 2px 2px 8px rgba(131, 131, 131, 0.4), inset -1px 1px 4px rgba(232, 232, 232, 0.3);
+        &:hover{
+            border: 1px solid red;
+        }
+    }
+
+    .btn{
+        float: left;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        margin-top: 2px;
+        background-color: red;
+    }
+}
+
+// nav
+.nav_wrap{
+    height: 50px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.nav{
+    
+    margin: 0 auto;
+    width: $width;
+    height: 50px;
+    overflow: hidden;
+
+    .item{
+        margin-left: 10px;;
+        width: 700px;
+        float: left;
+        overflow: hidden;
+        li{
+            text-align: center;
+            width: 16.6667%;
+            line-height: 50px;
+            font-size: 14px;
+            float: left;
+            margin-right: 10px;
+            img{
+                width: 9px;
+            }
+        }
+    }
+
+    .login{
+        float: right;
+        margin-right: 10px;
+        ul{
+            overflow: hidden;
+            li{
+                line-height: 50px;
+                float: left;
+                font-size: 14px;
+                a{
+                    color: #384d66;;
+                }
+            }
+            .spacer{
+                margin: 0 8px;
+            }
+        }
+    }
+}
