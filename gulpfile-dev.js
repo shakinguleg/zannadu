@@ -8,7 +8,7 @@ const del = require('del');//node的del删除模块
 
 //2.1 导出html文件命令
 task("html", async () => {
-    src("./*.html")
+    src("./html/*.html")
         .pipe(dest("./dist/"))
         .pipe(load.connect.reload())
 })
