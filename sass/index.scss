@@ -26,6 +26,7 @@
             a{
                 margin-top: 5px;
                 float: right;
+                color:#cb5977;
                 &:hover{
                     text-decoration: underline;;
                 }
@@ -59,6 +60,62 @@
             .code{
                 border-radius: 2px;
                 margin-top: 10px;;
+            }
+        }
+
+        .yanzhegnhuakuai{
+            width: 280px;
+            height: 100px;
+        }
+
+        .loginBtn{
+            width: 280px;
+            height: 50px;
+            border-radius: 10px;
+            text-align: center;
+            background-color: #cb5977;
+            line-height: 50px;
+        }
+
+        .pro{
+            text-align: center;
+            font-size: 12px;
+            margin-top: 20px;
+            a{
+                font-size: 12px;
+                margin-left: 4px;
+                &:hover{
+                    text-decoration: underline;
+
+                }
+            }
+        }
+        .relateLogin{
+            margin-top: 20px;
+            font-size: 14px;
+            text-align: left;
+            span{
+                margin-top: 5px;
+                margin-right: 10px;
+                float: left;
+            }
+            ul{
+                float: left;
+                overflow: hidden;
+                li{
+                    width: 28px;
+                    height: 24px;
+                    float: left;
+                    margin-right: 10px;
+                    padding-top: 4px;
+                    border: 1px solid #eee;
+                    border-radius: 50%;
+                    text-align: center;
+                    img{
+                        width: 18px;
+                        margin-top: 2px;
+                    }
+                }
             }
         }
     }

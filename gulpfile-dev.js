@@ -23,7 +23,8 @@ task("html", async () => {
 //导出css文件命令
 task("sass", async () => {
     src('./sass/*.scss')
-        .pipe(load.sass())
+    // 错误弹出相关信息, 不跳出gulp
+        .pipe(load.sass().on('error', load.sass.logError))
         .pipe(dest("./dist/css"))
         .pipe(load.connect.reload())
 })

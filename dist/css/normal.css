@@ -7,6 +7,11 @@ li {
   list-style: none; }
 
 a {
-  color: #cb5977;
+  color: #7C878E;
   text-decoration: none;
   font-size: 14px; }
+  a:hover {
+    color: #cb5977; }
+
+input {
+  outline: none; }

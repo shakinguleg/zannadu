@@ -1,0 +1,122 @@
+@import "normal.scss";
+
+
+
+.zhanwei{
+    height: 50px;
+    display: none;
+}
+
+
+// nav
+.nav_wrap{
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.nav{
+    margin: 0 auto;
+    width: $width;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+
+    .nav_logo{
+        float: left;
+        width: 60px;
+        height: 60px;
+        margin-top: 10px;
+        display: none;
+    }
+
+    .item{
+        margin-left: 10px;;
+        width: 700px;
+        float: left;
+        overflow: hidden;
+        li{
+            text-align: center;
+            width: 16.6667%;
+            font-size: 14px;
+            float: left;
+            margin-right: 10px;
+            img{
+                width: 9px;
+            }
+        }
+    }
+
+    .right_wrap{
+        float: right;
+        display: none;
+        .search{
+            float: left;
+            margin-top: 30px; 
+            border: 1px solid black;
+            input{
+                background-color: rgba(255, 255, 255, 0.45);
+                float: left;
+                outline: none;
+                width: 208px;
+                height: 31px;
+                padding: 0 10px;
+                font-size: 0.9em;
+                &:hover{
+                    border: 1px solid red;
+                }
+            }
+            .btn{
+                float: left;
+                width: 34px;
+                height: 34px;
+                border-radius: 50%;
+                margin-top: 2px;
+                background-color: #D07789;
+                img{
+                    width: 20px;
+                    margin-top: 7px;
+                    margin-left: 7px;
+                }
+            }
+        }
+        .login{
+            float: left;
+            margin-right: 10px;
+            ul{
+                overflow: hidden;
+                li{
+                    float: left;
+                    font-size: 14px;
+                    a{
+                        color: #384d66;;
+                    }
+                }
+                .spacer{
+                    margin: 0 8px;
+                }
+            }
+        }
+    }
+}
+
+.switch{
+    height: 80px;
+    line-height: 80px;
+
+    .nav_logo{
+        display: block;
+    }
+
+    .item{
+        width: auto;
+        li{
+            margin-right: 40px;
+            width: auto;
+        }
+    }
+
+
+    .right_wrap{
+        display: block;
+    }
+}

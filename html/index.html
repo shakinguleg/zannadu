@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+
     <link rel="stylesheet" href="../css/index.css">
 </head>
 
@@ -38,6 +38,20 @@
                         <input type="text" name="" id="" placeholder="输入验证码">
                     </div>
                 </div>
+
+                <div class="yanzhegnhuakuai"></div>
+
+                <div class="loginBtn">登录</div>
+
+                <div class="pro">登录即代表同意<a href="#">赞那度服务条款</a> </div>
+                <div class="relateLogin">
+                    <span>其他账号登录</span> 
+                    <ul>
+                        <li><img src="../img/微信_white.png" alt=""></li>
+                        <li><img src="../img/新浪_white.png" alt=""></li>
+                        <li><img src="../img/邮箱_white.png" alt=""></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -45,7 +59,33 @@
 
     <script src="../js/jquery-3.5.1.js"></script>
     <script src="../js/index.js"></script>
-    <script src="../js/loadbottom.js"></script>
+    <script src="../js/load.js"></script>
+    <script>
+        // $.ajax({
+        //     type: "get",
+        //     url: "http://localhost:80/testJsonp.php",
+        //     dataType: "jsonp",
+        //     jsonp: "cb",
+        //     success: function (json) {
+        //         console.log(`${json.a}  ----   ${json.b}`);
+        //     }
+        // });
+
+        // php启动的服务
+        $.ajax({
+            url: 'http://localhost/mytest/userList/userList.php',
+            type: 'get',
+            data: {
+                type: 'query',
+                userId: 2,
+            },
+            dataType: 'jsonp',
+            jsonp: 'cb',
+            success: function (json) {
+                console.log(json);
+            }
+        });
+    </script>
 </body>
 
 </html>
