@@ -1,5 +1,6 @@
 @import "normal.scss";
 
+// 轮播图
 .swiper-container {
     position: relative;
     width: 100%;
@@ -47,7 +48,7 @@
     &::after {
         content: "";
     }
-    &:hover{
+    &:hover {
         background-position: -88px -66px;
     }
 }
@@ -62,7 +63,153 @@
     &::after {
         content: "";
     }
-    &:hover{
+    &:hover {
         background-position: -154px -66px;
+    }
+}
+
+// content_wrap
+.content_wrap {
+    padding: 60px 0;
+    background-color: #465562;
+
+    .featured {
+        width: $width;
+        margin: 0 auto;
+
+        .project_title {
+            overflow: hidden;
+            margin: 0 10px 20px;
+            color: white;
+            span {
+                font-size: 25px;
+                float: left;
+                margin-bottom: 10px;
+            }
+            a {
+                text-decoration: underline;
+                padding-left: 40px;
+                display: block;
+                font-style: normal;
+                float: right;
+                font-size: 20px;
+                position: relative;
+                line-height: 35px;
+                img {
+                    border-radius: 50%;
+                    background-color: #cb5977;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+        }
+
+        .goods {
+            ul {
+                width: $width;
+                overflow: hidden;
+                li {
+                    &:hover .detail {
+                        width: 300px;
+                        position: absolute;
+                        bottom: 110px;
+                        background-color: #999;
+                        padding: 5px 10px;
+                    }
+                    float: left;
+                    width: 320px;
+                    height: 350px;
+                    margin: 0 10px 20px;
+                    position: relative;
+                    text-align: center;
+                    img {
+                        position: absolute;
+                        height: 240px;
+                        top: 0;
+                        left: 0;
+                    }
+                    .text_wrap {
+                        width: 280px;
+                        height: 110px;
+                        position: absolute;
+                        padding: 0 20px;
+                        bottom: 0;
+                        left: 0;
+                        background-color: white;
+                        span {
+                            position: absolute;
+                            font-size: 14px;
+                            top: 20px;
+                            left: 20px;
+                        }
+                    }
+                }
+
+                .special {
+                    width: 660px;
+                    &:hover .detail {
+                        width: 640px;
+                    }
+                    .text_wrap {
+                        width: 620px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 详情页
+.list_wrap {
+    background-color: #e1ebf3;
+    padding: 60px 0;
+}
+
+.list {
+    padding: 0 10px;
+    width: 1000px;
+    margin: 0 auto;
+    .center {
+        position: relative;
+
+        img {
+            width: 100%;
+            position: relative;
+        }
+        .text {
+            width: 270px;
+            position: absolute;
+            top: 0;
+            right: 51px;
+            padding: 15px 15px 22px;
+            background-color: white;
+            .map {
+                img {
+                    width: 100%;
+                }
+            }
+            .info {
+                font-size: 14px;
+                margin-bottom: 23px;
+                color: #666;
+            }
+
+            .btn_wrap {
+                width: 100%;
+                text-align: right;
+
+                a {
+                    padding: 10px 30px;
+                    line-height: 1.4em;
+                    display: inline-block;
+                    border-radius: 25px;
+                    background-color: #EF426F;
+                    color: white;
+                }
+            }
+        }
     }
 }

@@ -6,7 +6,7 @@ var $nav = $("<div></div>");
 
 $(content).before($nav);
 $($nav).before($header);
-$(content).after($bottom);
+$("body").append($bottom);
 $(function () {
     $header.load("../html/header.html", function (response, status, request) {
         console.log("header导入成功");
