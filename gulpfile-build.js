@@ -7,14 +7,14 @@ const del = require('del');//node的del删除模块
 console.log(load.imagemin);
 
 //2. 生成哈希值、压缩并导出文件命令
-// task("css", async () => {
-//     src('./css/*.css')
-//         .pipe(load.rev())//给文件生成哈希值
-//         .pipe(load.minifyCss())//压缩css文件
-//         .pipe(dest("./dist/css"))
-//         .pipe(load.rev.manifest())//保存生成的哈希值为json格式
-//         .pipe(dest("./rev/css"))
-// })
+task("css", async () => {
+    src('./css/*.css')
+        .pipe(load.rev())//给文件生成哈希值
+        .pipe(load.minifyCss())//压缩css文件
+        .pipe(dest("./dist/css"))
+        .pipe(load.rev.manifest())//保存生成的哈希值为json格式
+        .pipe(dest("./rev/css"))
+})
 
 // sass
 task("sass", async () => {
@@ -67,5 +67,5 @@ task('connect', async () => {
 })
 
 // 5. 组织构建生产包命令(删除-四种文件导出-启动服务)
-task('build', series('del', 'sass', 'js', 'img', 'html', 'connect'))
+task('build', series('del', 'sass','css', 'js', 'img', 'html', 'connect'))
 

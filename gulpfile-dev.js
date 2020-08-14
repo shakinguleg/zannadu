@@ -14,11 +14,11 @@ task("html", async () => {
 })
 
 //2.2 导出css文件命令
-// task("css", async () => {
-//     src('./css/*.css')
-//         .pipe(dest("./dist/css"))
-//         .pipe(load.connect.reload())
-// })
+task("css", async () => {
+    src('./css/*.css')
+        .pipe(dest("./dist/css"))
+        .pipe(load.connect.reload())
+})
 
 //导出css文件命令
 task("sass", async () => {
@@ -58,6 +58,7 @@ task('watch', async () => {
     //series为串行任务, 发生错误后不可执行后续任务
     watch('./html/*.html', series('html'));
     watch('./sass/*.scss', series('sass'));
+    watch('./css/*.css', series('css'));
     watch('./js/*.js', series('js'));
     watch('./img/*.*', series('img'));
 })
@@ -73,5 +74,5 @@ task('connect', async () => {
 })
 
 // 6. 组织构建开发包命令(删除-四种文件导出-启动服务-监听文件变化)
-task('dev', series('del', 'html', 'sass', 'js', 'img', 'connect', 'watch'))
+task('dev', series('del', 'html', 'sass','css', 'js', 'img', 'connect', 'watch'))
 

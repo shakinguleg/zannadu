@@ -16,6 +16,16 @@ a {
 input {
   outline: none; }
 
+.index_header {
+  position: relative;
+  height: 120px; }
+  .index_header img {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    z-index: -1;
+    background-size: cover; }
+
 .content_wrap {
   height: 550px;
   padding: 60px;
@@ -70,12 +80,14 @@ input {
       width: 280px;
       height: 100px; }
     .content .login .loginBtn {
+      display: block;
       width: 280px;
       height: 50px;
       border-radius: 10px;
       text-align: center;
       background-color: #cb5977;
-      line-height: 50px; }
+      line-height: 50px;
+      color: #333; }
     .content .login .pro {
       text-align: center;
       font-size: 12px;

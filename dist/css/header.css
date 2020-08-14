@@ -18,15 +18,18 @@ input {
 
 .header_wrap {
   width: 100%;
-  background-image: url("../img/header.jpg");
-  background-size: cover;
-  padding: 25px 0; }
+  background-color: transparent;
+  padding: 25px 0;
+  position: absolute;
+  top: 0; }
 
 .header {
   width: 1020px;
   height: 70px;
   overflow: hidden;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative;
+  z-index: 999; }
 
 .header .logo {
   float: left;
@@ -57,7 +60,7 @@ input {
     height: 34px;
     border-radius: 50%;
     margin-top: 2px;
-    background-color: #D07789; }
+    background-color: #d07789; }
     .header .search .btn img {
       width: 20px;
       margin-top: 7px;

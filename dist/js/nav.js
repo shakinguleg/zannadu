@@ -1,8 +1,9 @@
+var first = $("body").children()[0];
 window.onscroll = function () {
     var top = document.body.scrollTop || document.documentElement.scrollTop;
-    if (top >= 120) {
+    // 当高于第一个元素的高度时, 导航栏随窗口滚动
+    if (top >= first.clientHeight) {
         $(".zhanwei").css({ "display": "block" });
-
 
         $(".nav_wrap").css({
             "position": "fixed",

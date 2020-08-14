@@ -11,6 +11,10 @@
 
 <body>
     <!-- 同步测试 -->
+    
+    <div class="index_header">
+        <img src="../img/header.jpg" alt="">
+    </div>
 
     <!-- content -->
     <div class="content_wrap">
@@ -32,20 +36,20 @@
                     </div>
 
                     <div class="phone">
-                        <input type="text" name="" id="" placeholder="输入手机手机号码">
+                        <input class="ipt1" type="text" name="" id="" placeholder="输入手机号码">
                     </div>
                     <div class="code">
-                        <input type="text" name="" id="" placeholder="输入验证码">
+                        <input class="ipt2" type="text" name="" id="" placeholder="输入密码">
                     </div>
                 </div>
 
                 <div class="yanzhegnhuakuai"></div>
 
-                <div class="loginBtn">登录</div>
+                <a href="#loginBtn" class="loginBtn">登录</a>
 
                 <div class="pro">登录即代表同意<a href="#">赞那度服务条款</a> </div>
                 <div class="relateLogin">
-                    <span>其他账号登录</span> 
+                    <span>其他账号登录</span>
                     <ul>
                         <li><img src="../img/微信_white.png" alt=""></li>
                         <li><img src="../img/新浪_white.png" alt=""></li>
@@ -58,8 +62,8 @@
 
 
     <script src="../js/jquery-3.5.1.js"></script>
-    <script src="../js/index.js"></script>
     <script src="../js/load.js"></script>
+    <script src="../js/index.js"></script>
     <script>
         // $.ajax({
         //     type: "get",
@@ -71,20 +75,7 @@
         //     }
         // });
 
-        // php启动的服务
-        $.ajax({
-            url: 'http://localhost/mytest/userList/userList.php',
-            type: 'get',
-            data: {
-                type: 'query',
-                userId: 2,
-            },
-            dataType: 'jsonp',
-            jsonp: 'cb',
-            success: function (json) {
-                console.log(json);
-            }
-        });
+        
     </script>
 </body>
 

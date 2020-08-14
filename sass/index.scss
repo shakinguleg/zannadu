@@ -1,108 +1,122 @@
 @import "normal.scss";
+
+.index_header {
+    position: relative;
+    height: 120px;
+    img {
+        position: absolute;
+        width: 100%;
+        height: 120px;
+        z-index: -1;
+        background-size: cover;
+    }
+}
+
 // content
-.content_wrap{
+.content_wrap {
     height: 550px;
-    padding:60px;
+    padding: 60px;
     background-color: #ececec;
 }
 
-.content{
+.content {
     height: 500px;
     width: $width - 20px;
     margin: 0 auto;
     overflow: hidden;
     background: white url("../img/login.jpg") no-repeat top left;
-    .login{
+    .login {
         width: 280px;
         height: 430px;
         padding: 50px 40px 50px 680px;
-        .top{
+        .top {
             overflow: hidden;
-            i{
+            i {
                 font-size: 1.4em;
                 float: left;
                 font-style: normal;
             }
-            a{
+            a {
                 margin-top: 5px;
                 float: right;
-                color:#cb5977;
-                &:hover{
-                    text-decoration: underline;;
+                color: #cb5977;
+                &:hover {
+                    text-decoration: underline;
                 }
             }
         }
-        .center{
+        .center {
             margin-top: 20px;
-            input{
+            input {
                 width: 280px;
                 height: 39px;
                 padding: 12px 10px;
                 box-sizing: border-box;
             }
-            .country_code{
+            .country_code {
                 border-radius: 2px;
-                select{
+                select {
                     display: block;
                     width: 280px;
                     height: 39px;
-                    .opt{
+                    .opt {
                         display: block;
                         width: 280px;
                         height: 39px;
                     }
                 }
-            } 
-            .phone{
-                border-radius: 2px;
-                margin-top: 10px;;
             }
-            .code{
+            .phone {
                 border-radius: 2px;
-                margin-top: 10px;;
+                margin-top: 10px;
+            }
+            .code {
+                border-radius: 2px;
+                margin-top: 10px;
             }
         }
 
-        .yanzhegnhuakuai{
+        .yanzhegnhuakuai {
             width: 280px;
             height: 100px;
         }
 
-        .loginBtn{
+        .loginBtn {
+            display: block;
             width: 280px;
             height: 50px;
             border-radius: 10px;
             text-align: center;
             background-color: #cb5977;
             line-height: 50px;
+            color: #333;
         }
 
-        .pro{
+        .pro {
             text-align: center;
             font-size: 12px;
             margin-top: 20px;
-            a{
+            a {
                 font-size: 12px;
                 margin-left: 4px;
-                &:hover{
+                &:hover {
                     text-decoration: underline;
-
                 }
             }
         }
-        .relateLogin{
+        .relateLogin {
             margin-top: 20px;
             font-size: 14px;
             text-align: left;
-            span{
+            span {
                 margin-top: 5px;
                 margin-right: 10px;
                 float: left;
             }
-            ul{
+            ul {
                 float: left;
                 overflow: hidden;
-                li{
+                li {
                     width: 28px;
                     height: 24px;
                     float: left;
@@ -111,7 +125,7 @@
                     border: 1px solid #eee;
                     border-radius: 50%;
                     text-align: center;
-                    img{
+                    img {
                         width: 18px;
                         margin-top: 2px;
                     }
@@ -120,4 +134,3 @@
         }
     }
 }
-

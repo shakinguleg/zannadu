@@ -1,33 +1,36 @@
 @import "normal.scss";
 // header
-.header_wrap{
+.header_wrap {
     width: 100%;
-    background-image: url("../img/header.jpg");
-    background-size: cover;
+    background-color: transparent;
     padding: 25px 0;
+    position: absolute;
+    top: 0;
 }
 
-.header{
+.header {
     width: $width;
     height: 70px;
     overflow: hidden;
     margin: 0 auto;
+    position: relative;
+    z-index: 999;
 }
 
-.header .logo{
+.header .logo {
     float: left;
-    margin-left: 10px;;
-    img{
+    margin-left: 10px;
+    img {
         height: 70px;
     }
 }
 
-.header .search{
+.header .search {
     float: right;
     margin-top: 30px;
-    
-    input{
-        margin-right: 10px;;
+
+    input {
+        margin-right: 10px;
         float: left;
         margin-right: 10px;
         margin-top: 4px;
@@ -38,23 +41,22 @@
         padding: 8px 10px;
         font-size: 0.9em;
         box-shadow: 2px 2px 8px rgba(131, 131, 131, 0.4), inset -1px 1px 4px rgba(232, 232, 232, 0.3);
-        &:hover{
+        &:hover {
             border: 1px solid red;
         }
     }
 
-    .btn{
+    .btn {
         float: left;
         width: 34px;
         height: 34px;
         border-radius: 50%;
         margin-top: 2px;
-        background-color: #D07789;
-        img{
+        background-color: #d07789;
+        img {
             width: 20px;
             margin-top: 7px;
             margin-left: 7px;
         }
     }
 }
-
