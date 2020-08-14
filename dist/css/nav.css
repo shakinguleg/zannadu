@@ -25,22 +25,26 @@ input {
   background-color: white; }
 
 .nav {
+  position: relative;
   margin: 0 auto;
   width: 1020px;
   height: 50px;
-  line-height: 50px;
-  overflow: hidden; }
+  line-height: 50px; }
   .nav .nav_logo {
     float: left;
     width: 60px;
     height: 60px;
     margin-top: 10px;
+    margin-left: 10px;
     display: none; }
   .nav .item {
     margin-left: 10px;
     width: 700px;
-    float: left;
-    overflow: hidden; }
+    float: left; }
+    .nav .item .target:hover .select1 {
+      display: block; }
+    .nav .item .plan:hover .select2 {
+      display: block; }
     .nav .item li {
       text-align: center;
       width: 16.6667%;
@@ -49,13 +53,127 @@ input {
       margin-right: 10px; }
       .nav .item li img {
         width: 9px; }
+      .nav .item li .select {
+        width: 980px;
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        background-color: white;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+        z-index: 2;
+        overflow: hidden; }
+      .nav .item li .select1 {
+        display: none;
+        padding: 10px 0 15px 20px; }
+        .nav .item li .select1 dl {
+          float: left;
+          width: 225px;
+          padding-right: 20px; }
+          .nav .item li .select1 dl dt {
+            color: #588cb5;
+            font-size: 16px;
+            line-height: 1.3em;
+            font-weight: 700;
+            text-align: left;
+            width: 205px;
+            padding: 0 10px 5px; }
+          .nav .item li .select1 dl dd {
+            color: #666;
+            width: 225px;
+            padding-top: 8px;
+            overflow: hidden;
+            border-top: 1px solid #588cb5; }
+            .nav .item li .select1 dl dd .local {
+              float: left;
+              font-size: 13px;
+              line-height: 13px;
+              margin-bottom: 10px;
+              padding: 0 7px 0 8px; }
+            .nav .item li .select1 dl dd .spacer {
+              float: left;
+              width: 0.5px;
+              height: 13px;
+              background-color: #999; }
+        .nav .item li .select1 .clearBoth {
+          clear: both;
+          font-size: 0;
+          line-height: 0; }
+      .nav .item li .select2 {
+        display: none;
+        width: 1000px;
+        overflow: hidden; }
+        .nav .item li .select2 .left {
+          padding: 0 10px;
+          float: left; }
+          .nav .item li .select2 .left h3 {
+            font-style: normal;
+            font-weight: normal;
+            padding-top: 20px;
+            width: 640px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            text-align: left;
+            line-height: 1.4em;
+            color: #666; }
+          .nav .item li .select2 .left .wrap {
+            float: left;
+            width: 640px;
+            margin-left: 20px;
+            overflow: hidden; }
+            .nav .item li .select2 .left .wrap .block {
+              float: left;
+              width: 145px;
+              height: 145px;
+              margin: 0 15px 33px 0;
+              text-align: center;
+              position: relative; }
+              .nav .item li .select2 .left .wrap .block img {
+                border-radius: 50%;
+                width: 145px;
+                height: 145px;
+                background-image: url(../img/select2_1.jpg);
+                background-size: 100%; }
+              .nav .item li .select2 .left .wrap .block p {
+                bottom: 0;
+                left: 0;
+                width: 145px;
+                height: 22px;
+                position: absolute;
+                font-size: 14px;
+                line-height: 22px;
+                background-color: white; }
+              .nav .item li .select2 .left .wrap .block:nth-child(1) img {
+                background-size: 157px;
+                background-position: -12px 0; }
+              .nav .item li .select2 .left .wrap .block:nth-child(2) img {
+                background-position: 0 -145px; }
+              .nav .item li .select2 .left .wrap .block:nth-child(3) img {
+                background-position: 0 -290px; }
+              .nav .item li .select2 .left .wrap .block:nth-child(4) img {
+                background-position: 0 -590px; }
+              .nav .item li .select2 .left .wrap .block:nth-child(5) img {
+                background-position: 0 -440px; }
+              .nav .item li .select2 .left .wrap .block:nth-child(6) img {
+                background-position: 0 -725px; }
+              .nav .item li .select2 .left .wrap .block:nth-child(7) img {
+                background-position: 0 -870px; }
+              .nav .item li .select2 .left .wrap .block:nth-child(8) img {
+                background-position: 0 -1025px; }
+        .nav .item li .select2 .img_wrap {
+          float: right; }
+          .nav .item li .select2 .img_wrap img {
+            width: 320px;
+            height: 420px; }
   .nav .right_wrap {
     float: right;
     display: none; }
     .nav .right_wrap .search {
       float: left;
-      margin-top: 30px;
-      border: 1px solid black; }
+      position: relative;
+      margin-top: 23px;
+      margin-right: 10px;
+      overflow: hidden; }
       .nav .right_wrap .search input {
         background-color: rgba(255, 255, 255, 0.45);
         float: left;
@@ -63,20 +181,21 @@ input {
         width: 208px;
         height: 31px;
         padding: 0 10px;
-        font-size: 0.9em; }
-        .nav .right_wrap .search input:hover {
-          border: 1px solid red; }
+        font-size: 0.9em;
+        border: 1px solid #999;
+        outline: none; }
+        .nav .right_wrap .search input:focus {
+          border: 1px solid #d07789; }
       .nav .right_wrap .search .btn {
-        float: left;
-        width: 34px;
-        height: 34px;
-        border-radius: 50%;
-        margin-top: 2px;
-        background-color: #D07789; }
+        position: absolute;
+        width: 31px;
+        height: 31px;
+        line-height: 31px;
+        right: 0;
+        top: 0; }
         .nav .right_wrap .search .btn img {
           width: 20px;
-          margin-top: 7px;
-          margin-left: 7px; }
+          margin: 7px 0 0 5px; }
     .nav .right_wrap .login {
       float: left;
       margin-right: 10px; }
@@ -96,9 +215,14 @@ input {
   .switch .nav_logo {
     display: block; }
   .switch .item {
+    margin-left: 30px;
     width: auto; }
     .switch .item li {
-      margin-right: 40px;
+      margin-right: 0;
+      padding-right: 40px;
       width: auto; }
+      .switch .item li .select {
+        top: 80px;
+        left: 10px; }
   .switch .right_wrap {
     display: block; }

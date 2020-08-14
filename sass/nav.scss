@@ -1,59 +1,207 @@
 @import "normal.scss";
 
-
-
-.zhanwei{
+.zhanwei {
     height: 50px;
     display: none;
 }
 
-
 // nav
-.nav_wrap{
+.nav_wrap {
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
     background-color: white;
 }
 
-.nav{
+.nav {
+    position: relative;
     margin: 0 auto;
     width: $width;
     height: 50px;
     line-height: 50px;
-    overflow: hidden;
 
-    .nav_logo{
+    .nav_logo {
         float: left;
         width: 60px;
         height: 60px;
         margin-top: 10px;
+        margin-left: 10px;
         display: none;
     }
 
-    .item{
-        margin-left: 10px;;
+    .item {
+        margin-left: 10px;
         width: 700px;
         float: left;
-        overflow: hidden;
-        li{
+
+        .target:hover .select1{
+            display: block;
+        }
+        .plan:hover .select2{
+            display: block;
+        }
+
+        li {
             text-align: center;
             width: 16.6667%;
             font-size: 14px;
             float: left;
             margin-right: 10px;
-            img{
+            img {
                 width: 9px;
+            }
+            .select {
+                width: 980px;
+                position: absolute;
+                top: 50px;
+                left: 10px;
+                background-color: white;
+                box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+                z-index: 2;
+                overflow: hidden;
+            }
+
+            .select1 {
+                display: none;
+                padding: 10px 0 15px 20px;
+                dl {
+                    float: left;
+                    width: 225px;
+                    padding-right: 20px;
+                    dt {
+                        color: #588cb5;
+                        font-size: 16px;
+                        line-height: 1.3em;
+                        font-weight: 700;
+                        text-align: left;
+                        width: 205px;
+                        padding: 0 10px 5px;
+                    }
+                    dd {
+                        color: #666;
+                        width: 225px;
+                        padding-top: 8px;
+                        overflow: hidden;
+                        border-top: 1px solid #588cb5;
+                        .local {
+                            float: left;
+                            font-size: 13px;
+                            line-height: 13px;
+                            margin-bottom: 10px;
+                            padding: 0 7px 0 8px;
+                        }
+                        .spacer {
+                            float: left;
+                            width: 0.5px;
+                            height: 13px;
+                            background-color: #999;
+                        }
+                    }
+                }
+                .clearBoth {
+                    clear: both;
+                    font-size: 0;
+                    line-height: 0;
+                }
+            }
+            .select2 {
+                display: none;
+                width: 1000px;
+                overflow: hidden;
+                .left {
+                    padding: 0 10px;
+                    float: left;
+
+                    h3 {
+                        font-style: normal;
+                        font-weight: normal;
+                        padding-top: 20px;
+                        width: 640px;
+                        margin-left: 20px;
+                        margin-bottom: 20px;
+                        font-size: 20px;
+                        text-align: left;
+                        line-height: 1.4em;
+                        color: #666;
+                    }
+
+                    .wrap {
+                        float: left;
+                        width: 640px;
+                        margin-left: 20px;
+                        overflow: hidden;
+                        .block {
+                            float: left;
+                            width: 145px;
+                            height: 145px;
+                            margin: 0 15px 33px 0;
+                            text-align: center;
+                            position: relative;
+                            img {
+                                border-radius: 50%;
+                                width: 145px;
+                                height: 145px;
+                                background-image: url(../img/select2_1.jpg);
+                                background-size: 100%;
+                            }
+                            p {
+                                bottom: 0;
+                                left: 0;
+                                width: 145px;
+                                height: 22px;
+                                position: absolute;
+                                font-size: 14px;
+                                line-height: 22px;
+                                background-color: white;
+                            }
+
+                            &:nth-child(1) img {
+                                background-size: 157px;
+                                background-position: -12px 0;
+                            }
+                            &:nth-child(2) img {
+                                background-position: 0 -145px;
+                            }
+                            &:nth-child(3) img {
+                                background-position: 0 -290px;
+                            }
+                            &:nth-child(4) img {
+                                background-position: 0 -590px;
+                            }
+                            &:nth-child(5) img {
+                                background-position: 0 -440px;
+                            }
+                            &:nth-child(6) img {
+                                background-position: 0 -725px;
+                            }
+                            &:nth-child(7) img {
+                                background-position: 0 -870px;
+                            }
+                            &:nth-child(8) img {
+                                background-position: 0 -1025px;
+                            }
+                        }
+                    }
+                }
+                .img_wrap {
+                    float: right;
+                    img {
+                        width: 320px;
+                        height: 420px;
+                    }
+                }
             }
         }
     }
 
-    .right_wrap{
+    .right_wrap {
         float: right;
         display: none;
-        .search{
+        .search {
             float: left;
-            margin-top: 30px; 
-            border: 1px solid black;
-            input{
+            position: relative;
+            margin-top: 23px;
+            margin-right: 10px;
+            overflow: hidden;
+            input {
                 background-color: rgba(255, 255, 255, 0.45);
                 float: left;
                 outline: none;
@@ -61,37 +209,38 @@
                 height: 31px;
                 padding: 0 10px;
                 font-size: 0.9em;
-                &:hover{
-                    border: 1px solid red;
+                border: 1px solid #999;
+                outline: none;
+                &:focus {
+                    border: 1px solid #d07789;
                 }
             }
-            .btn{
-                float: left;
-                width: 34px;
-                height: 34px;
-                border-radius: 50%;
-                margin-top: 2px;
-                background-color: #D07789;
-                img{
+            .btn {
+                position: absolute;
+                width: 31px;
+                height: 31px;
+                line-height: 31px;
+                right: 0;
+                top: 0;
+                img {
                     width: 20px;
-                    margin-top: 7px;
-                    margin-left: 7px;
+                    margin: 7px 0 0 5px;
                 }
             }
         }
-        .login{
+        .login {
             float: left;
             margin-right: 10px;
-            ul{
+            ul {
                 overflow: hidden;
-                li{
+                li {
                     float: left;
                     font-size: 14px;
-                    a{
-                        color: #384d66;;
+                    a {
+                        color: #384d66;
                     }
                 }
-                .spacer{
+                .spacer {
                     margin: 0 8px;
                 }
             }
@@ -99,24 +248,28 @@
     }
 }
 
-.switch{
+.switch {
     height: 80px;
     line-height: 80px;
 
-    .nav_logo{
+    .nav_logo {
         display: block;
     }
 
-    .item{
+    .item {
+        margin-left: 30px;
         width: auto;
-        li{
-            margin-right: 40px;
+        li {
+            margin-right: 0;
+            padding-right: 40px;
             width: auto;
+            .select {
+                top: 80px;
+                left: 10px;
+            }
         }
     }
-
-
-    .right_wrap{
+    .right_wrap {
         display: block;
     }
 }

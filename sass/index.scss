@@ -8,7 +8,7 @@
 
 .content{
     height: 500px;
-    width: $width;
+    width: $width - 20px;
     margin: 0 auto;
     overflow: hidden;
     background: white url("../img/login.jpg") no-repeat top left;
