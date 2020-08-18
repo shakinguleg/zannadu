@@ -1,25 +1,31 @@
 @import "size.scss";
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-size: 14px;
 }
 
-li{
+body,
+th,
+tr {
+    font-family: "Montserrat", "STHeiti", "Microsoft YaHei", Arial, sans-serif;
+    font-weight: normal;
+}
+
+li {
     list-style: none;
 }
 
-
-a{
-    color: #7C878E;
+a {
+    color: #7c878e;
     text-decoration: none;
     font-size: 14px;
-    &:hover{
+    &:hover {
         color: #cb5977;
     }
 }
 
-input{
+input {
     outline: none;
 }

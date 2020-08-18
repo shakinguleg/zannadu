@@ -1,4 +1,4 @@
-@import "normal.scss";
+@import "size.scss";
 
 .zhanwei {
     height: 50px;
@@ -32,10 +32,10 @@
         width: 700px;
         float: left;
 
-        .target:hover .select1{
+        .target:hover .select1 {
             display: block;
         }
-        .plan:hover .select2{
+        .plan:hover .select2 {
             display: block;
         }
 
@@ -194,13 +194,13 @@
 
     .right_wrap {
         float: right;
-        display: none;
         .search {
             float: left;
             position: relative;
             margin-top: 23px;
             margin-right: 10px;
             overflow: hidden;
+            display: none;
             input {
                 background-color: rgba(255, 255, 255, 0.45);
                 float: left;
@@ -270,6 +270,8 @@
         }
     }
     .right_wrap {
-        display: block;
+        .search {
+            display: block;
+        }
     }
 }

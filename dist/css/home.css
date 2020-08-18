@@ -3,11 +3,17 @@
   padding: 0;
   font-size: 14px; }
 
+body,
+th,
+tr {
+  font-family: "Montserrat", "STHeiti", "Microsoft YaHei", Arial, sans-serif;
+  font-weight: normal; }
+
 li {
   list-style: none; }
 
 a {
-  color: #7C878E;
+  color: #7c878e;
   text-decoration: none;
   font-size: 14px; }
   a:hover {
@@ -77,11 +83,14 @@ input {
   background-color: #465562; }
   .content_wrap .featured {
     width: 1020px;
-    margin: 0 auto; }
+    margin: auto; }
     .content_wrap .featured .project_title {
       overflow: hidden;
       margin: 0 10px 20px;
       color: white; }
+      .content_wrap .featured .project_title .black {
+        color: black;
+        margin-bottom: 0; }
       .content_wrap .featured .project_title span {
         font-size: 25px;
         float: left;
@@ -114,69 +123,118 @@ input {
         position: relative;
         text-align: center; }
         .content_wrap .featured .goods ul li:hover .detail {
+          text-align: left;
           width: 300px;
           position: absolute;
           bottom: 110px;
           background-color: #999;
-          padding: 5px 10px; }
+          padding: 5px 10px;
+          font-size: 12px;
+          color: white; }
+        .content_wrap .featured .goods ul li:hover .text_wrap {
+          background-color: #cb5977;
+          color: white; }
+          .content_wrap .featured .goods ul li:hover .text_wrap .go em {
+            background-color: white; }
+            .content_wrap .featured .goods ul li:hover .text_wrap .go em i {
+              border-color: #cb5977; }
         .content_wrap .featured .goods ul li img {
           position: absolute;
           height: 240px;
           top: 0;
           left: 0; }
         .content_wrap .featured .goods ul li .text_wrap {
-          width: 280px;
+          overflow: hidden;
+          width: 320px;
           height: 110px;
           position: absolute;
-          padding: 0 20px;
+          font-family: "Montserrat", "STHeiti", "Microsoft YaHei", Arial, sans-serif;
           bottom: 0;
           left: 0;
-          background-color: white; }
+          background-color: white;
+          text-align: left; }
           .content_wrap .featured .goods ul li .text_wrap span {
             position: absolute;
+            padding: 0 20px;
             font-size: 14px;
             top: 20px;
-            left: 20px; }
+            left: 0;
+            clear: both; }
+          .content_wrap .featured .goods ul li .text_wrap .go {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            overflow: hidden; }
+            .content_wrap .featured .goods ul li .text_wrap .go em {
+              background-color: #cb5977;
+              font-style: normal;
+              float: left;
+              width: 30px;
+              height: 30px;
+              border-radius: 50%; }
+            .content_wrap .featured .goods ul li .text_wrap .go .go_1 {
+              margin-right: 10px;
+              position: relative; }
+              .content_wrap .featured .goods ul li .text_wrap .go .go_1 i {
+                position: absolute;
+                top: 3px;
+                right: 3px;
+                display: block;
+                width: 11px;
+                height: 11px;
+                border: 3px solid white;
+                border-top: none;
+                border-right: none; }
+            .content_wrap .featured .goods ul li .text_wrap .go .go_2 {
+              text-align: center;
+              position: relative; }
+              .content_wrap .featured .goods ul li .text_wrap .go .go_2 img {
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                width: 26px;
+                height: 26px; }
       .content_wrap .featured .goods ul .special {
         width: 660px; }
         .content_wrap .featured .goods ul .special:hover .detail {
           width: 640px; }
         .content_wrap .featured .goods ul .special .text_wrap {
-          width: 620px; }
-
-.list_wrap {
-  background-color: #e1ebf3;
-  padding: 60px 0; }
-
-.list {
-  padding: 0 10px;
-  width: 1000px;
-  margin: 0 auto; }
-  .list .center {
-    position: relative; }
-    .list .center img {
-      width: 100%;
+          width: 660px; }
+  .content_wrap .recent {
+    margin-top: 60px; }
+  .content_wrap .list_wrap {
+    background-color: #e1ebf3;
+    padding: 60px 0; }
+  .content_wrap .list {
+    padding: 0 10px;
+    width: 1000px;
+    margin: 0 auto; }
+    .content_wrap .list .center {
       position: relative; }
-    .list .center .text {
-      width: 270px;
-      position: absolute;
-      top: 0;
-      right: 51px;
-      padding: 15px 15px 22px;
-      background-color: white; }
-      .list .center .text .map img {
-        width: 100%; }
-      .list .center .text .info {
-        font-size: 14px;
-        margin-bottom: 23px;
-        color: #666; }
-      .list .center .text .btn_wrap {
+      .content_wrap .list .center img {
         width: 100%;
-        text-align: right; }
-        .list .center .text .btn_wrap a {
-          padding: 10px 30px;
-          line-height: 1.4em;
-          display: inline-block;
-          border-radius: 25px;
-          background-color: #EF426F;
-          color: white; }
+        position: relative; }
+      .content_wrap .list .center .text {
+        width: 270px;
+        position: absolute;
+        top: 0;
+        right: 51px;
+        padding: 15px 15px 22px;
+        background-color: white; }
+        .content_wrap .list .center .text .map img {
+          width: 100%; }
+        .content_wrap .list .center .text .info {
+          font-size: 14px;
+          margin-bottom: 23px;
+          color: #666; }
+        .content_wrap .list .center .text .btn_wrap {
+          width: 100%;
+          text-align: right;
+          overflow: hidden; }
+          .content_wrap .list .center .text .btn_wrap a {
+            float: right;
+            padding: 10px 30px;
+            line-height: 1.4em;
+            border-radius: 25px;
+            background-color: #ef426f;
+            color: white; }

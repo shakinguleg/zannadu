@@ -1,3 +1,17 @@
+function connected() {
+    $.ajax({
+        type: "get",
+        url: "http://localhost:3001/home/featured",
+        data: "data",
+        dataType: "jsonp",
+        jsonp: "getFeatured",
+        success: function (response) {
+            console.log(response[1].detail);
+        }
+    });
+}
+connected();
+
 var mySwiper = new Swiper('.swiper-container', {
     direction: 'horizontal', // 垂直切换选项
     loop: true, // 循环模式选项

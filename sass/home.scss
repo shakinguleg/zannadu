@@ -75,12 +75,18 @@
 
     .featured {
         width: $width;
-        margin: 0 auto;
+        margin: auto;
 
         .project_title {
             overflow: hidden;
             margin: 0 10px 20px;
             color: white;
+
+            .black {
+                color: black;
+                margin-bottom: 0;
+            }
+
             span {
                 font-size: 25px;
                 float: left;
@@ -113,12 +119,28 @@
                 overflow: hidden;
                 li {
                     &:hover .detail {
+                        text-align: left;
                         width: 300px;
                         position: absolute;
                         bottom: 110px;
                         background-color: #999;
                         padding: 5px 10px;
+                        font-size: 12px;
+                        color: white;
                     }
+
+                    &:hover .text_wrap {
+                        background-color: #cb5977;
+                        color: white;
+
+                        .go em{
+                            background-color: white;
+                            i{
+                                border-color: #cb5977;
+                            }
+                        }
+                    }
+
                     float: left;
                     width: 320px;
                     height: 350px;
@@ -132,18 +154,62 @@
                         left: 0;
                     }
                     .text_wrap {
-                        width: 280px;
+                        overflow: hidden;
+                        width: 320px;
                         height: 110px;
                         position: absolute;
-                        padding: 0 20px;
+                        font-family: "Montserrat", "STHeiti", "Microsoft YaHei", Arial, sans-serif;
                         bottom: 0;
                         left: 0;
                         background-color: white;
+                        text-align: left;
                         span {
                             position: absolute;
+                            padding: 0 20px;
                             font-size: 14px;
                             top: 20px;
-                            left: 20px;
+                            left: 0;
+                            clear: both;
+                        }
+                        .go {
+                            position: absolute;
+                            bottom: 20px;
+                            right: 20px;
+                            overflow: hidden;
+                            em {
+                                background-color: #cb5977;
+                                font-style: normal;
+                                float: left;
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                            }
+                            .go_1 {
+                                margin-right: 10px;
+                                position: relative;
+                                i{
+                                    position: absolute;
+                                    top: 3px;
+                                    right: 3px;
+                                    display: block;
+                                    width: 11px;
+                                    height: 11px;
+                                    border: 3px solid white;
+                                    border-top: none;
+                                    border-right: none;
+                                }
+                            }
+                            .go_2{
+                                text-align: center;
+                                position: relative;
+                                img{
+                                    position: absolute;
+                                    top: 2px;
+                                    left: 2px;
+                                    width: 26px;
+                                    height: 26px;
+                                }
+                            }
                         }
                     }
                 }
@@ -154,60 +220,67 @@
                         width: 640px;
                     }
                     .text_wrap {
-                        width: 620px;
+                        width: 660px;
                     }
                 }
             }
         }
     }
-}
 
-// 详情页
-.list_wrap {
-    background-color: #e1ebf3;
-    padding: 60px 0;
-}
+    .recent {
+        margin-top: 60px;
+    }
 
-.list {
-    padding: 0 10px;
-    width: 1000px;
-    margin: 0 auto;
-    .center {
-        position: relative;
+    // 详情页
+    .list_wrap {
+        background-color: #e1ebf3;
+        padding: 60px 0;
+    }
 
-        img {
-            width: 100%;
+    .list {
+        padding: 0 10px;
+        width: 1000px;
+        margin: 0 auto;
+        .center {
             position: relative;
-        }
-        .text {
-            width: 270px;
-            position: absolute;
-            top: 0;
-            right: 51px;
-            padding: 15px 15px 22px;
-            background-color: white;
-            .map {
-                img {
-                    width: 100%;
-                }
-            }
-            .info {
-                font-size: 14px;
-                margin-bottom: 23px;
-                color: #666;
-            }
 
-            .btn_wrap {
+            img {
                 width: 100%;
-                text-align: right;
+                position: relative;
+            }
+            .text {
+                width: 270px;
+                position: absolute;
+                top: 0;
+                right: 51px;
+                padding: 15px 15px 22px;
+                background-color: white;
+                .map {
+                    img {
+                        width: 100%;
+                    }
+                }
+                .info {
+                    font-size: 14px;
+                    margin-bottom: 23px;
+                    color: #666;
+                }
 
-                a {
-                    padding: 10px 30px;
-                    line-height: 1.4em;
-                    display: inline-block;
-                    border-radius: 25px;
-                    background-color: #EF426F;
-                    color: white;
+                .btn_wrap {
+                    width: 100%;
+                    text-align: right;
+                    overflow: hidden;
+
+                    a {
+                        float: right;
+                        // display: block;
+                        padding: 10px 30px;
+                        line-height: 1.4em;
+                        // display: inline-block;
+                        border-radius: 25px;
+                        background-color: #ef426f;
+                        color: white;
+                    }
                 }
             }
         }

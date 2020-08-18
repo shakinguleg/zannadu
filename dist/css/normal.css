@@ -3,11 +3,17 @@
   padding: 0;
   font-size: 14px; }
 
+body,
+th,
+tr {
+  font-family: "Montserrat", "STHeiti", "Microsoft YaHei", Arial, sans-serif;
+  font-weight: normal; }
+
 li {
   list-style: none; }
 
 a {
-  color: #7C878E;
+  color: #7c878e;
   text-decoration: none;
   font-size: 14px; }
   a:hover {
