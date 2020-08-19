@@ -18,7 +18,8 @@ http.createServer((req, res) => {
             res.end(urlObj.query.getFeatured + '(' + data + ')');
         }
         )
-    } else {
+    } 
+    else {
         res.writeHead(200, { 'Content-Type': 'text/plain;charset=utf-8' });
         res.end('错误');
     }

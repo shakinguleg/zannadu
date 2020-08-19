@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,10 @@ th,
 tr {
   font-family: "Montserrat", "STHeiti", "Microsoft YaHei", Arial, sans-serif;
   font-weight: normal; }
+
+body, html {
+  min-width: 1020px;
+  width: 100%; }
 
 li {
   list-style: none; }
@@ -138,8 +143,11 @@ input {
             background-color: white; }
             .content_wrap .featured .goods ul li:hover .text_wrap .go em i {
               border-color: #cb5977; }
+          .content_wrap .featured .goods ul li:hover .text_wrap .go .go_2 {
+            background-image: url("../img/行李箱_zi.png"); }
         .content_wrap .featured .goods ul li img {
           position: absolute;
+          width: 320px;
           height: 240px;
           top: 0;
           left: 0; }
@@ -187,17 +195,16 @@ input {
                 border-right: none; }
             .content_wrap .featured .goods ul li .text_wrap .go .go_2 {
               text-align: center;
-              position: relative; }
-              .content_wrap .featured .goods ul li .text_wrap .go .go_2 img {
-                position: absolute;
-                top: 2px;
-                left: 2px;
-                width: 26px;
-                height: 26px; }
+              position: relative;
+              background: url("../img/行李箱_white.png") #cb5977;
+              background-size: 26px;
+              background-position: center; }
       .content_wrap .featured .goods ul .special {
         width: 660px; }
         .content_wrap .featured .goods ul .special:hover .detail {
           width: 640px; }
+        .content_wrap .featured .goods ul .special a img {
+          width: 660px; }
         .content_wrap .featured .goods ul .special .text_wrap {
           width: 660px; }
   .content_wrap .recent {

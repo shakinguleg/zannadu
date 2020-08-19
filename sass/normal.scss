@@ -13,6 +13,11 @@ tr {
     font-weight: normal;
 }
 
+body,html{
+    min-width: 1020px;
+    width: 100%;
+}
+
 li {
     list-style: none;
 }

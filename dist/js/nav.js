@@ -25,5 +25,46 @@ if (!hidden) {
             $(".nav").removeClass("switch");
         }
     }
+}
 
+var _login = document.querySelector(".login");
+var _login_ul = document.querySelector(".login ul");
+var _login_a = document.querySelector(".login ul .fff a");
+var _login_user = document.querySelector(".login .user_tou");
+
+testLogin();
+var dom = null;
+function testLogin() {
+
+    if (getCookie("photo")) {
+        $(_login).append(dom);
+        dom = $(_login_ul).detach();
+    } else if (!getCookie("photo")) {
+        $(_login).append(dom);
+        dom = $(_login_user).detach();
+    }
+}
+
+function getCookie(key) {
+    var arr1 = document.cookie.split('; ');
+    for (var i = 0, len = arr1.length; i < len; i++) {
+        var arr2 = arr1[i].split('=');
+        if (arr2[0] === key) {
+            return unescape(arr2[1]);
+        }
+    }
+    return null;
+}
+
+_login_user.onclick = function () {
+    removeCookie("photo");
+}
+
+function removeCookie(key) {
+    setCookie({
+        key: key,
+        val: '1234',
+        days: -5
+    });
+    _login_a.click();
 }

@@ -1,11 +1,11 @@
 .bottom_wrap {
-  height: 655px;
-  background-color: #9AD6EF; }
+  background: url(../img/footer_bg.png) no-repeat, linear-gradient(-180deg, rgba(124, 202, 234, 0.9) 0%, rgba(198, 232, 246, 0.46) 96%); }
 
 .bottom {
   width: 1020px;
-  height: 655px;
-  margin: 0 auto; }
+  overflow: hidden;
+  margin: 0 auto;
+  padding-bottom: 100px; }
   .bottom .footer_link {
     width: 1000px;
     margin: 0 10px;
@@ -18,8 +18,11 @@
       margin-left: 110px; }
       .bottom .footer_link .left_1 div {
         margin: 3px 0;
-        overflow: hidden; }
+        overflow: hidden;
+        color: #7c878e; }
       .bottom .footer_link .left_1 .link {
+        font-size: 16.8px;
+        color: #333;
         margin-top: 0;
         margin-bottom: 5px;
         font-weight: 700;
@@ -34,18 +37,28 @@
         font-size: 1.3em; }
     .bottom .footer_link .left_2 {
       float: left;
-      margin-left: 80px; }
+      margin-left: 80px;
+      font-size: 16.8px;
+      color: #7c878e; }
       .bottom .footer_link .left_2 .wechat .w_0 {
+        color: #333;
         margin-bottom: 5px;
         font-weight: 700;
         font-size: 18px;
         line-height: 1.2em; }
       .bottom .footer_link .left_2 .wechat ul .first {
-        color: #00C40C; }
+        color: #00c40c; }
+        .bottom .footer_link .left_2 .wechat ul .first img {
+          width: 22px;
+          float: right;
+          margin-right: 35px; }
     .bottom .footer_link .right_1 {
       float: left;
-      margin-left: 80px; }
+      margin-left: 80px;
+      font-size: 16.8px;
+      color: #7c878e; }
       .bottom .footer_link .right_1 .first {
+        color: #333;
         margin-top: 0;
         margin-bottom: 5px;
         font-weight: 700;
@@ -53,10 +66,66 @@
         line-height: 1.2em; }
     .bottom .footer_link .right_2 {
       float: left;
-      margin-left: 80px; }
+      margin-left: 80px;
+      font-size: 16.8px;
+      color: #7c878e; }
       .bottom .footer_link .right_2 .first {
+        color: #333;
         margin-top: 0;
         margin-bottom: 5px;
         font-weight: 700;
         font-size: 18px;
         line-height: 1.2em; }
+  .bottom .contact {
+    width: 690px;
+    padding: 10px 200px 40px 110px;
+    margin: 0 10px; }
+    .bottom .contact ul {
+      overflow: hidden; }
+      .bottom .contact ul li {
+        float: left;
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+        margin-bottom: 10px;
+        background-size: 191px;
+        background-image: url("../img/button_logo.png");
+        border-radius: 50%;
+        box-shadow: 0 9px 12px rgba(0, 0, 0, 0.16); }
+        .bottom .contact ul li:nth-child(1) {
+          background-position: 0 0; }
+        .bottom .contact ul li:nth-child(2) {
+          background-position: -51px 0; }
+        .bottom .contact ul li:nth-child(3) {
+          background-position: -102px 0; }
+    .bottom .contact .reg {
+      overflow: hidden; }
+      .bottom .contact .reg a {
+        color: #cb5977;
+        font-size: 16.8px; }
+    .bottom .contact .right {
+      float: right; }
+      .bottom .contact .right a {
+        font-size: 16.8px;
+        color: #999; }
+
+.footer {
+  width: 100%;
+  background: white;
+  position: relative;
+  text-align: center;
+  padding-top: 10px; }
+  .footer p {
+    color: #333f48;
+    font-size: 14px;
+    margin-bottom: 10px; }
+  .footer .footer_top {
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 131px;
+    height: 131px; }
+  .footer .footer_bottom {
+    width: 100px;
+    height: 100px; }

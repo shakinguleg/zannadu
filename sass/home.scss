@@ -133,10 +133,15 @@
                         background-color: #cb5977;
                         color: white;
 
-                        .go em{
-                            background-color: white;
-                            i{
-                                border-color: #cb5977;
+                        .go {
+                            em {
+                                background-color: white;
+                                i {
+                                    border-color: #cb5977;
+                                }
+                            }
+                            .go_2 {
+                                background-image: url("../img/行李箱_zi.png");
                             }
                         }
                     }
@@ -149,6 +154,7 @@
                     text-align: center;
                     img {
                         position: absolute;
+                        width: 320px;
                         height: 240px;
                         top: 0;
                         left: 0;
@@ -187,7 +193,7 @@
                             .go_1 {
                                 margin-right: 10px;
                                 position: relative;
-                                i{
+                                i {
                                     position: absolute;
                                     top: 3px;
                                     right: 3px;
@@ -199,16 +205,12 @@
                                     border-right: none;
                                 }
                             }
-                            .go_2{
+                            .go_2 {
                                 text-align: center;
                                 position: relative;
-                                img{
-                                    position: absolute;
-                                    top: 2px;
-                                    left: 2px;
-                                    width: 26px;
-                                    height: 26px;
-                                }
+                                background: url("../img/行李箱_white.png") #cb5977;
+                                background-size: 26px;
+                                background-position: center;
                             }
                         }
                     }
@@ -218,6 +220,11 @@
                     width: 660px;
                     &:hover .detail {
                         width: 640px;
+                    }
+                    a {
+                        img {
+                            width: 660px;
+                        }
                     }
                     .text_wrap {
                         width: 660px;

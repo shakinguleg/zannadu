@@ -3,6 +3,7 @@
   display: none; }
 
 .nav_wrap {
+  min-width: 1020px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
   background-color: white; }
 
@@ -42,7 +43,7 @@
         left: 10px;
         background-color: white;
         box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-        z-index: 2;
+        z-index: 9999;
         overflow: hidden; }
       .nav .item li .select1 {
         display: none;
@@ -190,10 +191,22 @@
             color: #384d66; }
         .nav .right_wrap .login ul .spacer {
           margin: 0 8px; }
+      .nav .right_wrap .login .user_tou {
+        width: 40px;
+        height: 40px;
+        margin-top: 4px;
+        margin-right: 10px;
+        border: 1px solid #999;
+        border-radius: 50%;
+        background-image: url("../img/bird.png");
+        background-size: 40px;
+        background-position: top 4px left 5px;
+        background-repeat: no-repeat; }
 
 .switch {
   height: 80px;
-  line-height: 80px; }
+  line-height: 80px;
+  min-width: 1020px; }
   .switch .nav_logo {
     display: block; }
   .switch .item {
@@ -208,3 +221,5 @@
         left: 10px; }
   .switch .right_wrap .search {
     display: block; }
+  .switch .right_wrap .login .user_tou {
+    margin-top: 18px; }
