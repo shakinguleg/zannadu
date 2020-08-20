@@ -153,7 +153,8 @@ var say, price, introduce
 if (cook = getCookie("item")) {
     $.ajax({
         type: "get",
-        url: "http://localhost:3001/home/featured",
+        // url: "http://localhost:3001/home/featured",
+        url: "http://10.20.158.12:3001/home/featured",
         dataType: "jsonp",
         jsonp: "getFeatured",
         success: function (response) {

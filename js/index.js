@@ -74,7 +74,7 @@ $(_block).on("mousedown", _block, function (e) {
 
                     // php启动的服务
                     $.ajax({
-                        url: 'http://localhost/mytest/zanadu.php',
+                        url: 'http://10.20.158.12/mytest/zanadu.php',
                         type: 'get',
                         data: {
                             "type": 'query',
@@ -127,7 +127,7 @@ $(_block).on("mousedown", _block, function (e) {
 
                     // php启动的服务
                     $.ajax({
-                        url: 'http://localhost/mytest/zanadu.php',
+                        url: 'http://10.20.158.12/mytest/zanadu.php',
                         type: 'get',
                         data: {
                             "type": 'insert',

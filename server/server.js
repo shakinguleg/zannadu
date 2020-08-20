@@ -23,4 +23,5 @@ http.createServer((req, res) => {
         res.writeHead(200, { 'Content-Type': 'text/plain;charset=utf-8' });
         res.end('错误');
     }
-}).listen(3001, () => { console.log("开启服务器成功"); })
+}).listen(3001, "10.20.158.12", () => { console.log("开启服务器成功"); })
+// }).listen(3001,  () => { console.log("开启服务器成功"); })

@@ -67,9 +67,10 @@ task('watch', async () => {
 task('connect', async () => {
     load.connect.server({
         root: './dist',
-        // ip:'10.20.158.12' 默认localhost:8080
+        // ip:'10.20.158.12',// 默认localhost:8080
         livereload: true,//控制自动刷新, 通过connect.reload执行刷新动作
-        port: 3000
+        port: 3002,
+        host:"10.20.158.12"
     })
 })
 
